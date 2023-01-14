@@ -1,0 +1,9 @@
+.Header-section{
+    background-color: grey;
+}
+.nav-section{
+    display: flex;
+}
+.nav-mene{
+    display: flex;
+}
