@@ -9,17 +9,18 @@ body{
     margin: 0;
     padding: 0;
 }
-/* class width  */
+/* Body content width  */
 .section-width{
     padding: 0 13%;
     margin-bottom: 40px;
 }
-/* Header section  */
+.description{
+    color: #727272;
+}
+/* Header and nav section*/
 .header-section{
     background-color: rgba(255, 144, 14, 0.1);
 }
-/* nav item  */
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -56,7 +57,6 @@ li > a{
     font-weight: 700px;
 }
 .header-description{
-    color: #727272;
     padding: 0 200px;
     margin-top: 20px;
 }
@@ -79,7 +79,7 @@ li > a{
 main{
     background-color: white;
 }
-.image-section{
+.grid-image-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,6 @@ main{
     padding: 15px;
 }
 .text-1{
-    color: #727272;
     font-weight: 700;
 }
 .text-2{
@@ -108,7 +107,6 @@ main{
     font-weight: 900;
 }
 .first-section-description{
-    color: #727272;
     margin-top: 25px;
 }
 /* Features section  */
@@ -138,7 +136,6 @@ main{
     border-radius: 3px;
     background-color: #FF900E;
 }
-
 .card-text{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09);
     border-radius: 8px;
@@ -151,7 +148,6 @@ main{
    font-weight: 600;
 }
 .card-text-description,.features-discription{
-    color:#727272;
     font-weight: 400px;
 }
 .features-image img{
@@ -160,7 +156,7 @@ main{
     object-fit: cover;
     border-radius: 8px;
 }
-/* exprience year */
+/* exprience year box */
 .box-section{
     display: flex;
     justify-content: center;
@@ -200,15 +196,14 @@ main{
     margin-top: 80px;
 }
 .facts-description,.sponspors-description{
-    color: #727272;
     margin-top: 16px;
     width: 40%;
 }
-.achivent img{
+.achievement img{
     width: 40px;
     height: 40px;   
 }
-.achivent{
+.achievement{
     margin: 0 auto;
     border: 3px solid #e6c8a6;
     border-radius: 10px;
@@ -220,14 +215,15 @@ main{
     align-items: center;
     margin-top: 65px;
 }
-.achivent h1{
+.achievement h1{
     font-size: 40px;
     margin-top: 8px;
     font-weight: 600;
 }
-.achivent p{
+.achievement p{
     font-size: 17px;
     font-weight: 600;
+    margin-top: 7px;
    
 }
 /* Our sponspors sectoin  */
@@ -304,8 +300,6 @@ main{
 }
 /* Footer section copyright  */
 footer{
-    
-    /* margin: 20px 230px 60px 230px; */
     border-radius: 10px;
 }
 .footer-section{
@@ -315,8 +309,9 @@ footer{
     margin-bottom: 80px;
     border-radius: 5px;
 }
-/* code for responsizs  */
+/* code for Responsive using @media quary property   */
 @media screen and (max-width:576px) {
+    /* header section Responsive */
     .header-section{
         padding: 0;
     }
@@ -342,7 +337,8 @@ footer{
         width: 100%;
         padding: 0 20px 0 20px;
     }
-    .image-section{
+    /* grid image section Responsive */
+    .grid-image-section{
         flex-direction: column;
         padding: 0;
     }
@@ -357,6 +353,7 @@ footer{
         text-align: center;
         padding: 0 20px;
     }
+    /* Features section Responsive */
     .first-section-title{
         font-size: 35px;
     }
@@ -378,10 +375,7 @@ footer{
         width: 250px;
         height: 150px;
     }
-    .our-works{
-        grid-template-columns: repeat(2,1fr); 
-        gap: 20px;
-    }
+    /* Some Facts and achievement section responsive  */
     .some-facts{
        margin: 10px;
        display: flex;
@@ -397,11 +391,16 @@ footer{
         margin-bottom: 20px;
         width: 80%;
     }
-    .achivent{
+    .our-works{
+        grid-template-columns: repeat(2,1fr); 
+        gap: 20px;
+    }
+    .achievement{
         width: 170px;
         height: 170px;
         margin-top: 0px;
     }
+    /* Our sponspors section responsive */
     .sponspors{
         padding: 10px;
     }
@@ -412,6 +411,7 @@ footer{
         width: 80%;
         margin-bottom: 20px;
     }
+    /* Extra and contact section responsive */
     .last-section{
         padding: 0;
     }
@@ -427,6 +427,7 @@ footer{
     .contact-title{
         color: black;
     }
+    /* Footer section responsive */
     footer{
         margin: 0;
         border-radius: 0;
