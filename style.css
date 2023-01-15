@@ -11,7 +11,7 @@ body{
 }
 /* class width  */
 .section-width{
-    padding: 0 10%;
+    padding: 0 13%;
     margin-bottom: 40px;
 }
 /* Header section  */
@@ -24,7 +24,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:33px 0;
+    padding:27px 0;
     width: 100%;
     max-width: 1920px;
 }
@@ -158,13 +158,14 @@ main{
     width: 100%;
     height: 95%;
     object-fit: cover;
+    border-radius: 8px;
 }
 /* exprience year */
 .box-section{
     display: flex;
     justify-content: center;
-    margin-top: -230px;
-    margin-left: 180px;
+    margin-top: -190px;
+    margin-left: 200px;
 }
 .experience{
     width: 300px;
@@ -185,7 +186,7 @@ main{
 }
 /* Achiment section  */
 .some-facts{
-    
+    margin-top: 100px;
 }
 .our-works{
     display: grid;
@@ -217,7 +218,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 .achivent h1{
     font-size: 40px;
@@ -231,7 +232,7 @@ main{
 }
 /* Our sponspors sectoin  */
 .sponspors{
-    
+    margin-top: 120px;
 }
 .sponspors-title{
     margin: 0 auto;
@@ -250,6 +251,7 @@ main{
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
+    margin-top: 25px;
 }
 .sponspors-logo img{
     width: 142px;
@@ -260,7 +262,7 @@ main{
 }
 /* Extran section our contact with us  */
 .last-section{
-
+    margin-top: 35px;
 }
 .contact-section{
     padding: 60px 100px;
@@ -310,6 +312,8 @@ footer{
     background-color: #FFF4E7 ;
     padding: 30px 30px;
     text-align: center;
+    margin-bottom: 80px;
+    border-radius: 5px;
 }
 /* code for responsizs  */
 @media screen and (max-width:576px) {
@@ -322,21 +326,21 @@ footer{
     nav >ul{
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
     }
     .nav-title{
         margin-bottom: 25px;
         font-size: 35px;
     }
     .header-title{
-        font-size: 45px;
+        font-size: 40px;
     }
     .header-description{
         padding: 0 40px;
     }
     .header-info img{
         width: 100%;
-        padding: 0 35px 0 30px;
+        padding: 0 20px 0 20px;
     }
     .image-section{
         flex-direction: column;
@@ -364,8 +368,15 @@ footer{
        width: 100%;
        padding: 20px;
     }
+    .line{
+        height: 210px;
+    }
     .box-section{
         margin: 0;
+    }
+    .experience{
+        width: 250px;
+        height: 150px;
     }
     .our-works{
         grid-template-columns: repeat(2,1fr); 
@@ -377,6 +388,7 @@ footer{
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       text-align: center;
     }
     .facts-title{
         margin-top: 40px;
@@ -386,8 +398,9 @@ footer{
         width: 80%;
     }
     .achivent{
-        margin-top: 0;
-        margin-bottom: 20px;
+        width: 170px;
+        height: 170px;
+        margin-top: 0px;
     }
     .sponspors{
         padding: 10px;
@@ -405,7 +418,14 @@ footer{
     .contact-section{
         flex-direction: column;
         text-align: center;
+        align-items: center;
         border-radius: 0;
+    }
+    .office-location h1{
+        color: black;
+    }
+    .contact-title{
+        color: black;
     }
     footer{
         margin: 0;
