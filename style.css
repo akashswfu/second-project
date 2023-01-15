@@ -320,10 +320,10 @@ footer{
 }
 /* code for Responsive using @media quary property*/
 @media screen and (max-width:576px) {
-    /* header section Responsive */
-    .header-section{
+    .section-width{
         padding: 0;
     }
+     /* header section Responsive */
     nav{
         flex-direction: column;
     }
